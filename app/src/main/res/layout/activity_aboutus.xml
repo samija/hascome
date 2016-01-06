@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e46315">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e46315"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ይህ የሞባይል አፕልኬሽን በግሬት ኮሚሽን ሚኒስትሪ ኢትዮጵያ የተዘጋጀ ሲሆን ተጨማሪ አስተያየት ወይም ጥያቄ ካለዎት በአድራሻችን ይጻፉልን፡፡"
+        android:textSize="18dp"
+        android:textColor="#ffffff"/>
+</LinearLayout>
+</LinearLayout>

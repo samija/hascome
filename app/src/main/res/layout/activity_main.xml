@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="#ffffff"
+    android:layout_height="fill_parent"
+    android:layout_centerInParent="true"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_marginTop="2dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:text=" የእግዚአብሔር ህልዉና "
+                    android:textColor="#ffffff"
+                    android:textSize="30dp"
+                    android:id="@+id/tv1yegziabherhiliwina"
+                    android:padding="5dp"
+                    android:background="@drawable/button_design"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:id="@+id/panel1"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+
+                        android:text="እግዚአብሔር አለ?"
+                        android:id="@+id/btnegziabherale"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+
+                        android:text="እግዚአብሔር ማነው?"
+                        android:id="@+id/btn1egziabhermanew"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+
+                        android:text="የእግዚአብሔርን መኖር ለማረጋገጥ ትችላለህ?"
+                        android:id="@+id/btn2yegziabhermenor"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+
+                        android:text="እግዚአብሔር አለምን የፈጠረው በስድስት ቀን ነውን?"
+                        android:id="@+id/btn3egzaleminyefeterew"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+
+                        android:text="ስላሴን ልታብራራ ትችላለህን?"
+                        android:id="@+id/btn4silasenlitabrara"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+
+                        android:text="ስላሴ"
+                        android:id="@+id/btn5silase"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="2dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <TextView
+                    android:text="የህይወት ጥያቄዎች"
+                    android:textColor="#ffffff"
+                    android:textSize="30dp"
+                    android:id="@+id/tv2yehiwottiyake"
+                    android:padding="5dip"
+                    android:background="@drawable/button_design"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:id="@+id/panel2"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+
+                        android:text="ሕይወት ለምን እንዲህ ከባድ ሆነ?"
+                        android:id="@+id/btn6hiyiwotkebadhone"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+
+                        android:text="የሕይወቴ ዓላማ ምንድነው?"
+                        android:id="@+id/btn7yehiwotealama"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+
+                        android:text="በጭንቅ ስንከበብ እግዚአብሔር ወዴት ነው?"
+                        android:id="@+id/btn8bechinksinikebeb"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+
+                        android:text="ሊሞላ ያልቻለው የሕይወት ቋት?"
+                        android:id="@+id/btn9limolayalachalew"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+
+                        android:text="እግዚአብሔር ብቁ ዳይሬክተር ነውን?"
+                        android:id="@+id/btn10egziabherbiku"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+
+                        android:text="የውስጥህ ዓለም"
+                        android:id="@+id/btn11yewustihalem"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+
+                        android:text="የካምፓስ ላይፍ ቴንሽን"
+                        android:id="@+id/btn11yecampuslife"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+
+                        android:text="ከሱስ መላቀቅ"
+                        android:id="@+id/btn11kesusmelakek"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="2dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <TextView
+                    android:text="ወሲብ እና የፍቅር ግንኙነት"
+                    android:textColor="#ffffff"
+                    android:textSize="30dp"
+                    android:id="@+id/tv3wesibnfikir"
+                    android:padding="5dip"
+                    android:background="@drawable/button_design"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:id="@+id/panel3"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+
+                        android:text="ወሲብና የፍቅር ጓደኛ ፍለጋ"
+                        android:id="@+id/btn12yefikirguadegnafilega"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+
+                        android:text="መርዘኛ ፍትወትና የወሲብ ብክለት የፖርኖግራፊ ምንነት"
+                        android:id="@+id/btn13pornographymininet"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+
+                        android:text="ፖርንን እጠላዋለሁ"
+                        android:id="@+id/btn14pornintelawalew"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+
+                        android:text="የፍቅር ግንኙነት"
+                        android:id="@+id/btn15yefikirginignunet"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+
+                        android:text="የእግዚአብሔር ፈቃድ ስለ ጋብቻ"
+                        android:id="@+id/btn16yegziabherfikadgabicha"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+
+                        android:text="ሊፈርስ የተቃረበ ትዳር ተስፋ ይኖረው ይሆን?"
+                        android:id="@+id/btn17lifersyetekarebetidar"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+
+                        android:text="ራሰን በራስ ማርካት፡(ሴጋ) የባርነት ዓለም"
+                        android:id="@+id/btn18sega"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+
+                        android:text="የወሲብ ፊልም ምርኮኛ"
+                        android:id="@+id/btn19yewesibfilmmirkogna"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+
+                        android:text="ቅድመ ጋብቻ ወሲብ ስህተት ነውን?"
+                        android:id="@+id/btn20kidimegabichawesib"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+
+                        android:text="የወሲብ ህግ ማን ያውጣልን?"
+                        android:id="@+id/btn21yewesibhigmanyawita"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+
+                        android:text="እውነተኛ የሴቶች መብት አክባሪ"
+                        android:id="@+id/btn22ewunetegnayesetochmebt"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+
+                        android:text="ግብረ-ሰዶማውያን፣ ሌዝቢያን እና የእግዚአብሔር ፍቅር"
+                        android:id="@+id/btn23gibiresedomawuyan"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="2dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <TextView
+                    android:text="እግዚአብሔርን ማወቅ"
+                    android:textColor="#ffffff"
+                    android:textSize="30dp"
+                    android:id="@+id/tv4egziabmawek"
+                    android:padding="5dip"
+                    android:background="@drawable/button_design"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:id="@+id/panel4"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+
+                        android:text="እግዚአብሔርን በግል ማወቅ"
+                        android:id="@+id/btn24egziabherinbegilmawek"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+
+                        android:text="ኢየሱስ ለምን ሞተ?"
+                        android:id="@+id/btn25eyesusleminmote"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+
+                        android:text="እግዚአብሔር ፀሎት ይመልሳልን?"
+                        android:id="@+id/btn26egziabhertselotyimelisalin"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+
+                        android:text="ኢየሱስ እርሱ አምላክ እንደሆነ ተናግሯልን?"
+                        android:id="@+id/btn27eyesusamilaknew"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+
+                        android:text="በኢየሱስና በሌሎች ኃይማኖቶች መካከል ያለው ልዩነት ምንድነው?"
+                        android:id="@+id/btn28eysusinalelochhayimanotoch"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+
+                        android:text="የእግዚአብሔር ፍቅር ለፅንፈኛ ሙስሊሞች"
+                        android:id="@+id/btn29yegziabherfikirlemuslimoch"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+
+                        android:text="በካቶሊክ ዕምነትና በክርስትና መካከል ልዩነት አለን?"
+                        android:id="@+id/btn30catholiceminetnchristina"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+
+                        android:text="መንግስተ ሰማይ ምን ተመስላለች?"
+                        android:id="@+id/btn31mengistesemaymntimeslalech"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="2dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <TextView
+                    android:text="የህይወት ምስክርነቶች"
+                    android:textColor="#ffffff"
+                    android:textSize="30dp"
+                    android:id="@+id/tv5films"
+                    android:padding="5dip"
+                    android:background="@drawable/button_design"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:id="@+id/panel5"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+
+                        android:text="ደስታን ተስፋን ፍለጋ•••"
+                        android:id="@+id/btn32yehiwotmisikirinetoch"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+
+                        android:text="ሁሉንም አየሁት ግን ..."
+                        android:id="@+id/btn33yegilyehiwotmisikirinetoch"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+                        android:text="ህይወቴ ተለወጠ ..... እንዴት"
+                        android:id="@+id/btn34yegilyehiwotmisikirinetoch"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+                        android:text="ኢየሱስ ህይወቴን ለወጠው"
+                        android:id="@+id/btn35yegilyehiwotmisikirinetoch"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+                        android:text="ያመለጠ"
+                        android:id="@+id/btn36yegilyehiwotmisikirinetoch"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+                        android:text="እየሱስን እንዲህ ነው ያገኘውት"
+                        android:id="@+id/btn37yegilyehiwotmisikirinetoch"
+                        android:layout_margin="2dip"
+                        android:padding="5dip"
+                        android:textColor="#e46315"
+                        android:background="@drawable/in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <ListView
+                android:id="@android:id/list"
+                android:layout_width="fill_parent"
+                android:visibility="gone"
+                android:layout_height="340dip"
+                android:drawSelectorOnTop="false"
+                android:dividerHeight="0px"/>
+        </LinearLayout>
+    </ScrollView>
+   </LinearLayout>
+</RelativeLayout>
