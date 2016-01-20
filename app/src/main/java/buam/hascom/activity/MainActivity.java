@@ -477,8 +477,8 @@ public class MainActivity extends ListActivity implements OnClickListener
             startActivity(new Intent(MainActivity.this, TeleEshtaol.class));
             return true;
         }
-        if (item.getItemId() == R.id.contactus) {
-            startActivity(new Intent(MainActivity.this, ContactUs.class));
+        if (item.getItemId() == R.id.feedback) {
+            startActivity(new Intent(MainActivity.this, Feedback.class));
             return true;
         }
         if (item.getItemId() == R.id.aboutus) {

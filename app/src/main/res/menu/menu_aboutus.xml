@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item android:id="@+id/call"
 
         android:title="ቴልኤሽታኦል"
         />
-    <item android:id="@+id/contactus"
 
-        android:title="አድራሻ"
-        />
     <item android:id="@+id/aboutus"
 
         android:title="ስለ እኛ"
+        />
+<item android:title="አስተያየት"
+    android:id="@id/feedback"/>
+    <item
+        android:id="@+id/menu_share"
+        android:title="Share"
+        android:icon="@drawable/ic_action_share"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="100"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"
         />
 </menu>

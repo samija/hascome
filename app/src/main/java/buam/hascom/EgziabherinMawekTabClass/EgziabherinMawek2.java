@@ -2,15 +2,19 @@ package buam.hascom.EgziabherinMawekTabClass;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.ShareActionProvider;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import buam.hascom.FragmentEgziabherinMawek.Thirty;
 import buam.hascom.FragmentEgziabherinMawek.Thirty1;
@@ -22,7 +26,7 @@ import buam.hascom.FragmentEgziabherinMawek.Twenty8;
 import buam.hascom.FragmentEgziabherinMawek.Twenty9;
 import buam.hascom.R;
 import buam.hascom.activity.AboutUs;
-import buam.hascom.activity.ContactUs;
+import buam.hascom.activity.Feedback;
 import buam.hascom.activity.TeleEshtaol;
 
 /**
@@ -33,7 +37,7 @@ public class EgziabherinMawek2 extends AppCompatActivity {
     private Toolbar toolbar;
     private TabLayout tabLayout;
     private ViewPager viewPager;
-
+    private ShareActionProvider myShareActionProvider;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +54,19 @@ public class EgziabherinMawek2 extends AppCompatActivity {
 
         tabLayout = (TabLayout) findViewById(R.id.tabs28);
         tabLayout.setupWithViewPager(viewPager);
+
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.setType("vnd.android-dir/mms-sms");
+                intent.putExtra("address", "+251911202110");
+                intent.putExtra("sms_body", "ሜሴጆን ይጻፉ!!!");
+                startActivity(intent);
+            }
+        });
+
     }
 
     private void setupViewPager(ViewPager viewPager) {
@@ -136,12 +153,34 @@ public class EgziabherinMawek2 extends AppCompatActivity {
         }
     }
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_aboutus, menu);
-        return true;
-    }
+    public boolean onCreateOptionsMenu(Menu menu){
 
+// Inflate the menu; this adds items to the action bar if it is present.
+
+        getMenuInflater().inflate(R.menu.menu_aboutus, menu);
+
+// Inflate the menu; this adds items to the action bar if it is present.
+
+        MenuItem shareItem = menu.findItem(R.id.menu_share);
+        myShareActionProvider = (ShareActionProvider) MenuItemCompat.getActionProvider(shareItem);
+        myShareActionProvider.setShareHistoryFileName(
+                ShareActionProvider.DEFAULT_SHARE_HISTORY_FILE_NAME);
+        myShareActionProvider.setShareIntent(Shareintent());
+
+        return super.onCreateOptionsMenu(menu);
+
+
+    }
+    /** Returns a share intent */
+    private Intent Shareintent(){
+        Intent Shareintent = new Intent(Intent.ACTION_SEND);
+        Shareintent.setType("text/html");
+        Shareintent.putExtra(Intent.EXTRA_SUBJECT, "SUBJECT");
+        Shareintent.putExtra(Intent.EXTRA_TEXT, "http://www.habeshastudent.com/m/knowing.html");
+        return Shareintent;
+
+
+    }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
@@ -149,8 +188,8 @@ public class EgziabherinMawek2 extends AppCompatActivity {
             startActivity(new Intent(this, TeleEshtaol.class));
             return true;
         }
-        if (item.getItemId() == R.id.contactus) {
-            startActivity(new Intent(this, ContactUs.class));
+        if (item.getItemId() == R.id.feedback) {
+            startActivity(new Intent(this, Feedback.class));
             return true;
         }
         if (item.getItemId() == R.id.aboutus) {
