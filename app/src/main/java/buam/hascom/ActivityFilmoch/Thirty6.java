@@ -3,7 +3,9 @@ package buam.hascom.ActivityFilmoch;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.ShareActionProvider;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -13,7 +15,7 @@ import android.widget.ProgressBar;
 
 import buam.hascom.R;
 import buam.hascom.activity.AboutUs;
-import buam.hascom.activity.ContactUs;
+import buam.hascom.activity.Feedback;
 import buam.hascom.activity.TeleEshtaol;
 
 /**
@@ -23,7 +25,7 @@ public class Thirty6 extends AppCompatActivity {
 
     android.webkit.WebView web2;
     ProgressBar progressBar2;
-
+    private ShareActionProvider myShareActionProvider;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -76,11 +78,35 @@ public class Thirty6 extends AppCompatActivity {
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
+    public boolean onCreateOptionsMenu(Menu menu){
+
+// Inflate the menu; this adds items to the action bar if it is present.
+
         getMenuInflater().inflate(R.menu.menu_aboutus, menu);
-        return true;
+
+// Inflate the menu; this adds items to the action bar if it is present.
+
+        MenuItem shareItem = menu.findItem(R.id.menu_share);
+        myShareActionProvider = (ShareActionProvider) MenuItemCompat.getActionProvider(shareItem);
+        myShareActionProvider.setShareHistoryFileName(
+                ShareActionProvider.DEFAULT_SHARE_HISTORY_FILE_NAME);
+        myShareActionProvider.setShareIntent(Shareintent());
+
+        return super.onCreateOptionsMenu(menu);
+
+
     }
+    /** Returns a share intent */
+    private Intent Shareintent(){
+        Intent Shareintent = new Intent(Intent.ACTION_SEND);
+        Shareintent.setType("text/html");
+        Shareintent.putExtra(Intent.EXTRA_SUBJECT, "SUBJECT");
+        Shareintent.putExtra(Intent.EXTRA_TEXT, "http://www.habeshastudent.com/m/video.html");
+        return Shareintent;
+
+
+    }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -89,8 +115,8 @@ public class Thirty6 extends AppCompatActivity {
             startActivity(new Intent(this, TeleEshtaol.class));
             return true;
         }
-        if (item.getItemId() == R.id.contactus) {
-            startActivity(new Intent(this, ContactUs.class));
+        if (item.getItemId() == R.id.feedback) {
+            startActivity(new Intent(this, Feedback.class));
             return true;
         }
         if (item.getItemId() == R.id.aboutus) {

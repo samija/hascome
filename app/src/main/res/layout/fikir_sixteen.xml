@@ -11,7 +11,7 @@
         android:text="መርዘኛ ፍትወትና የወሲብ ብክለት የፖርኖግራፊ ምንነት"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:textColor="#e46315"/>
+        android:textColor="#e46315"  />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -27,7 +27,7 @@
             android:layout_centerInParent="true"
             android:text="@string/sixteen"
             android:textSize="18dp"
-            android:textColor="#000000"/>
+            android:textColor="#000000"  android:textIsSelectable="true"/>
 
 
     </ScrollView>
